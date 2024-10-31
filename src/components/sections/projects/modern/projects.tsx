@@ -22,7 +22,7 @@ function Projects() {
   );
 
   return (
-    <MotionWrap className="w-full py-24 lg:py-32" id="projects">
+    <MotionWrap className="w-full md:py-32" id="projects">
       <div className="px-4 md:px-6">
         <div className="grid gap-10">
           <div className="flex w-full flex-col items-center justify-center text-center lg:flex-row lg:justify-between lg:text-left">
@@ -69,12 +69,14 @@ function Projects() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-
-              {/* todo: look for a nicer design, remove px-12 to see the new design */}
-              {/* <CarouselPrevious className='z-[999] left-0 rounded' variant={"default"} />
-              <CarouselNext className='z-[999] right-0 rounded' variant={"default"} /> */}
               <CarouselPrevious />
               <CarouselNext />
+              <section className='block md:hidden mt-12'>
+              <div className=" absolute inset-0 flex items-center gap-2 justify-end pointer-events-none">
+                <CarouselPrevious className="relative left-0 md:left-4 pointer-events-auto" />
+                <CarouselNext className="relative right-0 md:right-4 pointer-events-auto" />
+              </div>
+              </section>
             </Carousel>
           </div>
         </div>

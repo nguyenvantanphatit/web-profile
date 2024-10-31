@@ -26,7 +26,7 @@ function ExperienceCard({
     <Card className={cn('border-none bg-transparent', className)}>
       <CardContent className="p-1">
         <div className="flex items-baseline justify-between">
-          <h3 className="text-3xl font-semibold">
+          <h3 className="text-2xl font-semibold">
             <TextReveal>{company}</TextReveal>
           </h3>
           <span className="text-sm font-medium">

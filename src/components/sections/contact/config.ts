@@ -3,32 +3,24 @@ import {
   SiGithub,
   SiLinkedin,
   SiX,
-  SiYoutube
+  SiYoutube,
+  SiFacebook
+
 } from '@icons-pack/react-simple-icons';
 
 const contact: Contact = {
-  email: 'john@example.com',
+  email: 'nguyenvantanphat.it@gmail.com',
   socials: [
     {
       name: 'Github',
-      href: 'https://github.com/',
+      href: 'https://github.com/nguyenvantanphatit',
       Icon: SiGithub
     },
     {
-      name: 'Youtube',
-      href: 'https://youtube.com/',
-      Icon: SiYoutube
+      name: 'Facebook',
+      href: 'https://www.facebook.com/tanphat05062001',
+      Icon: SiFacebook
     },
-    {
-      name: 'X',
-      href: 'https://x.com/',
-      Icon: SiX
-    },
-    {
-      name: 'Linkedin',
-      href: 'https://linkedin.com/',
-      Icon: SiLinkedin
-    }
   ]
 };
 

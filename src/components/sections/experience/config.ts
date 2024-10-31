@@ -2,32 +2,25 @@ import { Experience } from '@/types/experience';
 
 const experiences: Experience[] = [
   {
-    name: 'Web Development',
-    duration: '2022 - Present',
-    company: 'Acme Inc',
+    name: 'Front-end development',
+    duration: '02/2024 - Present',
+    company: 'Echo Medi',
     description:
       'Building beautiful and functional websites using modern web technologies, focusing on performance, accessibility, and SEO-friendly design.'
   },
   {
-    name: 'UI/UX Design',
-    duration: '2021 - 2022',
-    company: 'Creative Designs Ltd',
+    name: 'Full-stack development',
+    duration: '11/2023 - 01/2024',
+    company: 'TMTECH Viet Nam',
     description:
       'Creating delightful and intuitive user experiences, specializing in responsive design and user-centric methodologies.'
   },
   {
-    name: 'Database Management',
-    duration: '2020 - 2022',
-    company: 'DataTech Solutions',
+    name: 'Front-end development',
+    duration: '04/2023 - 04/2023',
+    company: 'Viet Japan Digital',
     description:
       'Storing and organizing data efficiently, ensuring data integrity, and optimizing database queries for high traffic applications.'
-  },
-  {
-    name: 'Mobile Development',
-    duration: '2019 - 2021',
-    company: 'Innovative Apps Inc',
-    description:
-      'Crafting engaging and scalable apps for smartphones and tablets, focusing on cross-platform development and native performance.'
   }
 ];
 

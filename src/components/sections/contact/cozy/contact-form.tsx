@@ -116,7 +116,7 @@ export default function ContactForm() {
                   <Textarea
                     disabled={status === 'executing'}
                     placeholder={
-                      'Hello!\n\nThis is Jane Doe, from Example. Just wanted to say hi!'
+                      'Hello!\n\nThis is Tan Phat, from Example. Just wanted to say hi!'
                     }
                     {...field}
                   />
