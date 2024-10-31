@@ -43,8 +43,8 @@ function Hero() {
           </div>
         </div>
       </div>
-
-      <ParallaxImage
+      
+      {/* <ParallaxImage
         src="/images/hero.jpg"
         containerRef={container}
         alt="Hero image"
@@ -56,7 +56,7 @@ function Hero() {
           scaleStart: 1,
           scaleEnd: 1.5
         }}
-      />
+      /> */}
     </section>
   );
 }

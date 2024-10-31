@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowUpRightIcon } from 'lucide-react';
 import TextReveal from '@/components/motion/text-reveal';
-
+import Introduce from '../ring/about';
 function About() {
   return (
     <MotionWrap className="w-full py-24 lg:py-32" id="about">
@@ -35,6 +35,9 @@ function About() {
                 </Button>
               </div>
             </div>
+          </div>
+          <div className="flex items-center justify-center">
+            <Introduce />
           </div>
         </div>
       </div>

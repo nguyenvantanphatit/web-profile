@@ -3,3 +3,9 @@ export interface Skill {
   description?: string;
   thumbnail?: string;
 }
+
+export interface DataSkill {
+  id: number;
+  image: string;
+  label: string;
+};
