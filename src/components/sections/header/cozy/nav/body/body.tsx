@@ -42,28 +42,29 @@ export default function Body({
   };
 
   return (
-    <div className={styles.body}>
-      {links.map((link, index) => {
-        const { title, href, target } = link;
-
-        return (
-          <Link key={`l_${index}`} href={href} target={target}>
-            <motion.p
-              onClick={() => setIsActive(false)}
-              onMouseOver={() => setSelectedLink({ isActive: true, index })}
-              onMouseLeave={() => setSelectedLink({ isActive: false, index })}
-              variants={blur}
-              animate={
-                selectedLink.isActive && selectedLink.index !== index
-                  ? 'open'
-                  : 'closed'
-              }
-            >
-              {getChars(title)}
-            </motion.p>
-          </Link>
-        );
-      })}
-    </div>
+    <>
+      <div className={styles.body}>
+        {links.map((link, index) => {
+          const { title, href, target } = link;
+          return (
+            <Link key={`l_${index}`} href={href} target={target}>
+              <motion.p
+                onClick={() => setIsActive(false)}
+                onMouseOver={() => setSelectedLink({ isActive: true, index })}
+                onMouseLeave={() => setSelectedLink({ isActive: false, index })}
+                variants={blur}
+                animate={
+                  selectedLink.isActive && selectedLink.index !== index
+                    ? 'open'
+                    : 'closed'
+                }
+              >
+                {getChars(title)}
+              </motion.p>
+            </Link>
+          );
+        })}
+      </div>
+    </>
   );
 }

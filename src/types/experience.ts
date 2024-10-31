@@ -4,5 +4,6 @@ export interface Experience {
   name: string;
   company: string;
   duration: string;
-  description?: string;
+  description?: string[]; 
+  technologies?: string[];
 }

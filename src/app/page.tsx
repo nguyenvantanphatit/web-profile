@@ -4,7 +4,6 @@ import {
   About,
   Skills,
   Experience,
-  Testimonials,
   Projects,
   Contact,
   Footer
@@ -18,16 +17,15 @@ export default function Home() {
     <SmoothScroll>
       <div className="flex min-h-[100dvh] flex-col">
         <Header loader={true} />
-        <main className="flex-1">
+        <main className="flex-1 max-w-screen-2xl mx-auto">
           <Hero />
           <About />
           <Skills />
           <Projects />
           <Experience />
-          {/* <Testimonials /> */}
           <Contact />
-          <Footer />
         </main>
+          <Footer />
       </div>
       <Cursor />
     </SmoothScroll>

@@ -5,7 +5,6 @@ import Skills from './skills/cozy/skills';
 import Experience from './experience/cozy/experience';
 import Projects from './projects/modern/projects';
 import Contact from './contact/cozy/contact';
-import Testimonials from './testimonials/modern/testimonials';
 import Footer from './footer/cozy/footer';
 
 export {
@@ -15,7 +14,6 @@ export {
   Projects,
   Skills,
   Experience,
-  Testimonials,
   Contact,
   Footer
 };

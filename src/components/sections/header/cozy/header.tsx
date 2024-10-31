@@ -8,6 +8,7 @@ import { opacity, background } from './anim';
 import Nav from './nav';
 
 import { metadata as meta } from '@/app/config';
+import ModeToggle from '@/components/mode-toggle';
 
 interface HeaderProps {
   loader?: boolean;
@@ -36,6 +37,9 @@ const Header = ({ loader }: HeaderProps) => {
             {meta.author.name}
           </span>
         </Link>
+        <div className="md:space-x-4">
+          <ModeToggle />
+        </div>
         <div onClick={() => setIsActive(!isActive)} className={styles.el}>
           <div className={styles.label}>
             <motion.p

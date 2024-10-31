@@ -1,15 +1,11 @@
 import React from 'react';
-import { CardContent, CardFooter, Card } from '@/components/ui/card';
-import { buttonVariants } from '@/components/ui/button';
-
-import Link from 'next/link';
-import Image from 'next/image';
-import { CodeIcon } from 'lucide-react';
+import { CardContent, Card } from '@/components/ui/card';
 
 import { Experience } from '@/types/experience';
 
 import { cn } from '@/lib/utils';
 import TextReveal from '@/components/motion/text-reveal';
+import { Badge } from '@/components/ui/badge';
 
 interface ExperienceCardProps extends Experience {
   className?: string;
@@ -20,6 +16,7 @@ function ExperienceCard({
   name,
   duration,
   description,
+  technologies,
   className
 }: ExperienceCardProps) {
   return (
@@ -36,9 +33,27 @@ function ExperienceCard({
         <h4 className="mt-2 text-xl font-medium uppercase">
           <TextReveal>{name}</TextReveal>
         </h4>
-        <p className="mt-2 text-zinc-700 dark:text-zinc-400 max-w-2xl text-lg font-light">
-          <TextReveal>{description}</TextReveal>
-        </p>
+        {description && (
+          <ul className="mt-4 space-y-2 list-disc list-inside">
+            {description.map((desc, index) => (
+              <li key={index} className="text-zinc-700 dark:text-zinc-400 text-lg font-light">
+                <TextReveal>{desc}</TextReveal>
+              </li>
+            ))}
+          </ul>
+        )}
+        {technologies && (
+          <div className="mt-6">
+            <h5 className="text-md font-semibold uppercase">Technologies:</h5>
+            <ul className="flex flex-wrap gap-2 mt-2">
+              <div className="mt-2 flex flex-wrap gap-2">
+                {technologies.map((tech, index) => (
+                  <Badge key={`project-tag_${index}`}>{tech}</Badge>
+                ))}
+              </div>
+            </ul>
+          </div>
+        )}
         <hr className="my-6 border-t border-border" />
       </CardContent>
     </Card>

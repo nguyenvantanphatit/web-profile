@@ -28,6 +28,7 @@ function Experiences() {
                 key={`experience_${index}`}
                 name={experience.name}
                 description={experience.description}
+                technologies={experience.technologies}
                 company={experience.company}
                 duration={experience.duration}
               />

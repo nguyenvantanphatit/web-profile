@@ -1,14 +1,23 @@
+"use client"
 import React from 'react';
 import SkillCard from './skill-card';
-
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
+} from '@/components/ui/carousel';
+import TestimonialCard from './testimonial-card';
 import Reveal from '@/components/reveal';
-
+import Autoplay from 'embla-carousel-auto-scroll';
 import { dataBrand, skills } from '@/components/sections/skills/config';
 import MotionWrap from '@/components/motion-wrap';
-
 function Skills() {
+  const firstRow = dataBrand.slice(0, dataBrand.length / 2);
+  const secondRow = dataBrand.slice(dataBrand.length / 2);
   return (
-    <MotionWrap className="w-full py-24 lg:py-32" id="skills">
+    <MotionWrap className="w-full md:pb-24" id="skills">
       <div className="space-y-4 px-4 md:px-6 lg:space-y-10">
         <div className="flex w-full flex-col items-center justify-center text-center lg:flex-row lg:justify-between lg:text-left">
           <div className="flex flex-col items-center lg:items-start">
@@ -28,18 +37,76 @@ function Skills() {
             expertise, making things happen.
           </p>
         </div>
-        <div className="mt-6 flex items-center justify-between flex-col md:flex-row gap-4">
-          <div className="grid grid-cols-3 gap-4 xl:grid-cols-5 px-4 sm:px-8">
-            {dataBrand.map((item) => (
-              <div key={item.id} className='pt-2 w-full rounded-2xl border border-gray-200 hover:border-indigo-600 hover:bg-blue-50 transition-all duration-700 ease-in-out flex-col justify-start items-center inline-flex'>
-                <a href="#">
-                  <img src={item.image} alt={`Brand ${item.id}`} className='h-10 px-2 rounded-md' />
-                </a>
-                <h5 className="text-center py-2 text-gray-900 text-base font-semibold leading-relaxed ">{item.label}</h5>
-              </div>
-            ))}
-          </div>
-          <div className="system w-full md:w-3/5 mt-12">
+        <div className="relative flex flex-col items-center justify-center gap-4 overflow-hidden">
+          <Carousel
+            opts={{
+              align: 'start',
+              dragFree: true,
+              loop: true
+            }}
+            plugins={[
+              Autoplay({
+                speed: 600 / 1000,
+                startDelay: 100,
+                stopOnInteraction: false,
+                stopOnMouseEnter: true
+              })
+            ]}
+            className="w-full"
+          >
+            <CarouselContent>
+              {firstRow.map((testimonial, index) => (
+                <CarouselItem
+                  key={`testimonial_${index}`}
+                  className="md:basis-1/6 lg:basis-1/6 xl:basis-1/6 p-2">
+                  <div className="h-full p-1">
+                    <TestimonialCard
+                      name={testimonial.label}
+                      image={testimonial.image}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+          <Carousel
+            opts={{
+              align: 'start',
+              dragFree: true,
+              loop: true
+            }}
+            plugins={[
+              Autoplay({
+                speed: 600 / 1000,
+                direction: 'backward',
+                startDelay: 100,
+                stopOnInteraction: false,
+                stopOnMouseEnter: true
+              })
+            ]}
+            className="w-full"
+          >
+            <CarouselContent>
+              {secondRow.map((testimonial, index) => (
+                <CarouselItem
+                  key={`testimonial-reverse_${index}`}
+                  className="md:basis-1/6 lg:basis-1/6 xl:basis-1/6 p-2">
+                  <div className="h-full p-1">
+                    <TestimonialCard
+                      name={testimonial.label}
+                      image={testimonial.image}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white dark:from-background"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-white dark:from-background"></div>
+        </div>
+        <div className="flex items-center justify-between gap-4">
+          <div></div>
+          <div className="system w-full">
             <div className="system__orbit system__orbit--sun">
               <img src="/images/skill/nextjs.svg" alt="Sun" className="system__icon system__icon--sun" />
             </div>
@@ -69,15 +136,7 @@ function Skills() {
               </div>
             </div>
           </div>
-          {/* {skills.map((skill, index) => (
-            <SkillCard
-              key={`skill_${index}`}
-              index={index + 1}
-              name={skill.name}
-              description={skill.description}
-              thumbnail={skill.thumbnail}
-            />
-          ))} */}
+          <div></div>
         </div>
       </div>
     </MotionWrap>

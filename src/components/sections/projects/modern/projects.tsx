@@ -22,7 +22,7 @@ function Projects() {
   );
 
   return (
-    <MotionWrap className="w-full md:py-32" id="projects">
+    <MotionWrap className="w-full md:pb-24" id="projects">
       <div className="px-4 md:px-6">
         <div className="grid gap-10">
           <div className="flex w-full flex-col items-center justify-center text-center lg:flex-row lg:justify-between lg:text-left">
