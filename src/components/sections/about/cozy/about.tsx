@@ -23,7 +23,7 @@ function About() {
               </p>
               <div className="flex gap-2 items-center">
                 <Button asChild variant={'outline'}>
-                  <a href="resume.pdf" target="_blank">
+                  <a href="CV_Nguyen_Van_Tan_Phat_Fron_End_Developer.pdf" target="_blank">
                     View Resume <ArrowUpRightIcon className="ml-2 size-5" />
                   </a>
                 </Button>
