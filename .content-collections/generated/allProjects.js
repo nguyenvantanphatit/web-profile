@@ -46,6 +46,120 @@ export default [
     "body": "var Component=(()=>{var d=Object.create;var i=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var x=(e,n)=>()=>(n||e((n={exports:{}}).exports,n),n.exports),v=(e,n)=>{for(var t in n)i(e,t,{get:n[t],enumerable:!0})},c=(e,n,t,r)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let a of p(n))!f.call(e,a)&&a!==t&&i(e,a,{get:()=>n[a],enumerable:!(r=g(n,a))||r.enumerable});return e};var w=(e,n,t)=>(t=e!=null?d(m(e)):{},c(n||!e||!e.__esModule?i(t,\"default\",{value:e,enumerable:!0}):t,e)),_=e=>c(i({},\"__esModule\",{value:!0}),e);var l=x((y,s)=>{s.exports=_jsx_runtime});var b={};v(b,{default:()=>u});var o=w(l());function h(e){let n={p:\"p\",...e.components};return(0,o.jsx)(n.p,{children:\"This is a website offering interactive coding tutorials and challenges to help users learn programming languages through practice. The idea was to create a hands-on learning environment where users can improve their coding skills by solving challenges. This project enhanced my ability to create educational content and interactive web applications.\"})}function u(e={}){let{wrapper:n}=e.components||{};return n?(0,o.jsx)(n,{...e,children:(0,o.jsx)(h,{...e})}):h(e)}return _(b);})();\n;return Component;"
   },
   {
+    "content": "This project is a comprehensive platform for managing healthcare clinic services and e-commerce functionalities. Users can book appointments, view health records, and purchase medical products online. This project helped me refine my skills in building secure and user-friendly web applications with complex data structures.\r\n\r\n### Key Features\r\n- **Appointment Booking**: Users can view available slots, select preferred dates, and book appointments.\r\n- **E-commerce**: Provides a catalog of medical products with integrated VNPay and Momo payment options.\r\n- **Secure Authentication**: OTP verification through FPT SMS Brandname ensures secure access to sensitive data.\r\n- **Staff Dashboard**: An internal interface for clinic staff to manage schedules, patient information, and departmental workflows.\r\n- **Healthcare Blog**: A content section where users can access health tips, news, and updates.\r\n\r\n### Technologies Used\r\n- **Frontend**: Next.js, Tailwind CSS for UI components.\r\n- **Backend**: Strapi for content management, Node.js, SQLite for data storage.\r\n- **Payments**: VNPay, Momo integration for local payment solutions.\r\n- **Security**: OTP authentication via FPT SMS Brandname.\r\n\r\n### Lessons Learned\r\nThis project enabled me to strengthen my skills in building healthcare-focused applications and integrate e-commerce solutions seamlessly. I gained experience in using SQLite for efficient data handling and managing secure data in a healthcare setting.",
+    "title": "Healthcare & E-commerce Website",
+    "description": "A web platform for clinic services and medical product purchases, built with Next.js, Tailwind CSS, Strapi, and SQLite.",
+    "website": "https://echomedi.com/",
+    "tags": [
+      {
+        "label": "Next.js"
+      },
+      {
+        "label": "TypeScript"
+      },
+      {
+        "label": "Tailwind CSS"
+      },
+      {
+        "label": "Strapi"
+      },
+      {
+        "label": "NodeJs"
+      },
+      {
+        "label": "SQLite"
+      }
+    ],
+    "date": "2024-10-31",
+    "_meta": {
+      "filePath": "echomedi.mdx",
+      "fileName": "echomedi.mdx",
+      "directory": ".",
+      "extension": "mdx",
+      "path": "echomedi"
+    },
+    "toc": [
+      {
+        "title": "Key Features",
+        "url": "#key-features",
+        "depth": 3
+      },
+      {
+        "title": "Technologies Used",
+        "url": "#technologies-used",
+        "depth": 3
+      },
+      {
+        "title": "Lessons Learned",
+        "url": "#lessons-learned",
+        "depth": 3
+      }
+    ],
+    "structuredData": {
+      "contents": [
+        {
+          "heading": "",
+          "content": "This project is a comprehensive platform for managing healthcare clinic services and e-commerce functionalities. Users can book appointments, view health records, and purchase medical products online. This project helped me refine my skills in building secure and user-friendly web applications with complex data structures."
+        },
+        {
+          "heading": "key-features",
+          "content": "Appointment Booking: Users can view available slots, select preferred dates, and book appointments."
+        },
+        {
+          "heading": "key-features",
+          "content": "E-commerce: Provides a catalog of medical products with integrated VNPay and Momo payment options."
+        },
+        {
+          "heading": "key-features",
+          "content": "Secure Authentication: OTP verification through FPT SMS Brandname ensures secure access to sensitive data."
+        },
+        {
+          "heading": "key-features",
+          "content": "Staff Dashboard: An internal interface for clinic staff to manage schedules, patient information, and departmental workflows."
+        },
+        {
+          "heading": "key-features",
+          "content": "Healthcare Blog: A content section where users can access health tips, news, and updates."
+        },
+        {
+          "heading": "technologies-used",
+          "content": "Frontend: Next.js, Tailwind CSS for UI components."
+        },
+        {
+          "heading": "technologies-used",
+          "content": "Backend: Strapi for content management, Node.js, SQLite for data storage."
+        },
+        {
+          "heading": "technologies-used",
+          "content": "Payments: VNPay, Momo integration for local payment solutions."
+        },
+        {
+          "heading": "technologies-used",
+          "content": "Security: OTP authentication via FPT SMS Brandname."
+        },
+        {
+          "heading": "lessons-learned",
+          "content": "This project enabled me to strengthen my skills in building healthcare-focused applications and integrate e-commerce solutions seamlessly. I gained experience in using SQLite for efficient data handling and managing secure data in a healthcare setting."
+        }
+      ],
+      "headings": [
+        {
+          "id": "key-features",
+          "content": "Key Features"
+        },
+        {
+          "id": "technologies-used",
+          "content": "Technologies Used"
+        },
+        {
+          "id": "lessons-learned",
+          "content": "Lessons Learned"
+        }
+      ]
+    },
+    "body": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var y=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),S=(i,e)=>{for(var t in e)a(i,t,{get:e[t],enumerable:!0})},o=(i,e,t,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of p(e))!f.call(i,r)&&r!==t&&a(i,r,{get:()=>e[r],enumerable:!(s=u(e,r))||s.enumerable});return i};var w=(i,e,t)=>(t=i!=null?m(g(i)):{},o(e||!i||!i.__esModule?a(t,\"default\",{value:i,enumerable:!0}):t,i)),x=i=>o(a({},\"__esModule\",{value:!0}),i);var l=y((T,c)=>{c.exports=_jsx_runtime});var j={};S(j,{default:()=>h});var n=w(l());function d(i){let e={h3:\"h3\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"This project is a comprehensive platform for managing healthcare clinic services and e-commerce functionalities. Users can book appointments, view health records, and purchase medical products online. This project helped me refine my skills in building secure and user-friendly web applications with complex data structures.\"}),`\n`,(0,n.jsx)(e.h3,{id:\"key-features\",children:\"Key Features\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Appointment Booking\"}),\": Users can view available slots, select preferred dates, and book appointments.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"E-commerce\"}),\": Provides a catalog of medical products with integrated VNPay and Momo payment options.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Secure Authentication\"}),\": OTP verification through FPT SMS Brandname ensures secure access to sensitive data.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Staff Dashboard\"}),\": An internal interface for clinic staff to manage schedules, patient information, and departmental workflows.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Healthcare Blog\"}),\": A content section where users can access health tips, news, and updates.\"]}),`\n`]}),`\n`,(0,n.jsx)(e.h3,{id:\"technologies-used\",children:\"Technologies Used\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Frontend\"}),\": Next.js, Tailwind CSS for UI components.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Backend\"}),\": Strapi for content management, Node.js, SQLite for data storage.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Payments\"}),\": VNPay, Momo integration for local payment solutions.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Security\"}),\": OTP authentication via FPT SMS Brandname.\"]}),`\n`]}),`\n`,(0,n.jsx)(e.h3,{id:\"lessons-learned\",children:\"Lessons Learned\"}),`\n`,(0,n.jsx)(e.p,{children:\"This project enabled me to strengthen my skills in building healthcare-focused applications and integrate e-commerce solutions seamlessly. I gained experience in using SQLite for efficient data handling and managing secure data in a healthcare setting.\"})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}return x(j);})();\n;return Component;"
+  },
+  {
     "content": "This is an e-commerce platform dedicated to eco-friendly products where users can buy, sell, and learn about sustainable living. The goal of this project was to promote sustainable living by providing a marketplace for eco-friendly products. Working on this project helped me understand the intricacies of e-commerce development and the importance of sustainability in business.",
     "title": "Eco-friendly Product Marketplace",
     "description": "An e-commerce platform dedicated to eco-friendly products where users can buy, sell, and learn about sustainable living.",
