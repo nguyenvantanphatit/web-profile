@@ -27,65 +27,105 @@ const skills: Skill[] = [
 
 const dataBrand: DataSkill[] = [
   {
-      id: 1,
-      image: '/images/skill/nextjs.svg',
-      label: "NextJs"
+    id: 1,
+    image: '/images/skill/nextjs.svg',
+    label: "NextJs"
   },
   {
-      id: 2,
-      image: '/images/skill/react.svg',
-      label: "ReactJs"
+    id: 2,
+    image: '/images/skill/react.svg',
+    label: "ReactJs"
   },
   {
-      id: 3,
-      image: '/images/skill/angular.svg',
-      label: "Angular"
+    id: 3,
+    image: '/images/skill/angular.svg',
+    label: "Angular"
   },
   {
-      id: 4,
-      image: '/images/skill/nodejs.svg',
-      label: "NodeJs"
+    id: 4,
+    image: '/images/skill/nodejs.svg',
+    label: "NodeJs"
   },
   {
-      id: 5,
-      image: '/images/skill/typescript.svg',
-      label: "Typecript"
+    id: 5,
+    image: '/images/skill/typescript.svg',
+    label: "Typecript"
   },
   {
-      id: 6,
-      image: '/images/skill/javascript.svg',
-      label: "Javascript"
+    id: 6,
+    image: '/images/skill/javascript.svg',
+    label: "Javascript"
   },
 
   {
-      id: 7,
-      image: '/images/skill/html.svg',
-      label: "Html"
+    id: 7,
+    image: '/images/skill/html.svg',
+    label: "HTML"
   },
   {
-      id: 8,
-      image: '/images/skill/css.svg',
-      label: "Css"
+    id: 8,
+    image: '/images/skill/css.svg',
+    label: "CSS"
   },
   {
-      id: 9,
-      image: '/images/skill/sass.svg',
-      label: "Sass"
+    id: 9,
+    image: '/images/skill/sass.svg',
+    label: "Sass"
   },
   {
-      id: 10,
-      image: '/images/skill/antd.svg',
-      label: "Ant Design"
+    id: 10,
+    image: '/images/skill/antd.svg',
+    label: "Ant Design"
   },
   {
-      id: 11,
-      image: '/images/skill/tailwind-css.svg',
-      label: "Tailwind Css"
+    id: 11,
+    image: '/images/skill/tailwind-css.svg',
+    label: "Tailwind Css"
   },
   {
-      id: 12,
-      image: '/images/skill/redux.svg',
-      label: "Redux"
+    id: 12,
+    image: '/images/skill/shadcn.png',
+    label: "Shadcn"
+  },
+  {
+    id: 13,
+    image: '/images/skill/redux.svg',
+    label: "Redux"
+  },
+  {
+    id: 14,
+    image: '/images/skill/zustand.png',
+    label: "Zustand"
+  },
+  {
+    id: 15,
+    image: '/images/skill/mysql.svg',
+    label: "Mysql"
+  },
+  {
+    id: 16,
+    image: '/images/skill/mongodb.svg',
+    label: "Mongodb"
+  },
+  {
+    id: 17,
+    image: '/images/skill/sourcetree.webp',
+    label: "Sourcetree"
+  },
+  {
+    id: 18,
+    image: '/images/skill/postman.svg',
+    label: "Postman"
+  },
+  {
+    id: 19,
+    image: '/images/skill/github.svg',
+    label: "Github"
+  },
+  {
+    id: 20,
+    image: '/images/skill/gitlab.png',
+    label: "Gitlab"
   },
 ]
 

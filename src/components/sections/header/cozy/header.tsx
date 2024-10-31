@@ -26,13 +26,13 @@ const Header = ({ loader }: HeaderProps) => {
         y: 0
       }}
       transition={{
-        delay: loader ? 3.5 : 0, // 3.5 for loading, .5 can be added for delay
+        delay: loader ? 3.5 : 0,
         duration: 0.8
       }}
     >
       <div className={styles.bar}>
         <Link href="/" className="flex items-center justify-center">
-          <span className="text-md font-semibold transition-transform hover:translate-x-1 hover:translate-y-1">
+          <span className="text-md font-semibold transition-transform hover:translate-x-1 hover:translate-y-1 uppercase">
             {meta.author.name}
           </span>
         </Link>
@@ -50,7 +50,8 @@ const Header = ({ loader }: HeaderProps) => {
           </div>
           <div
             className={`${styles.burger} ${isActive ? styles.burgerActive : ''}`}
-          ></div>
+          >
+          </div>
         </div>
       </div>
       <motion.div

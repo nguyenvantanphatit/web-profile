@@ -18,13 +18,10 @@ function About() {
             <div className="space-y-4">
               <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 <TextReveal>
-                  I am a passionate and creative Web Developer with a love for
-                  beautiful and functional websites. I have experience working
-                  with a variety of web technologies and frameworks and I am
-                  always eager to learn new things and take on new challenges.
+                  I'm a Front-End Developer with many years of experience developing web applications using modern technologies such as React.js, Next.js, and Angular. I also have extensive knowledge of Node.js, which helps me build comprehensive and optimized web applications. I have worked on real projects such as landing pages, e-commerce, news, and dashboards.
                 </TextReveal>
               </p>
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center">
                 <Button asChild variant={'outline'}>
                   <a href="resume.pdf" target="_blank">
                     View Resume <ArrowUpRightIcon className="ml-2 size-5" />
