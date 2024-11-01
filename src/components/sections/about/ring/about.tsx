@@ -1,18 +1,16 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-const colors = [
-  '#ffad00',
-  '#01c5c4',
-  '#ffa5a5',
-  '#d789d7',
-  '#f09ae9',
-  '#e7305b',
-  '#303960'
-];
 export default function Introduce() {
-
   const [colorIndex, setColorIndex] = useState(0);
-
+  const colors = [
+    '#ffad00',
+    '#01c5c4',
+    '#ffa5a5',
+    '#d789d7',
+    '#f09ae9',
+    '#e7305b',
+    '#303960'
+  ];
   useEffect(() => {
     const interval = setInterval(() => {
       setColorIndex((prevIndex) => (prevIndex + 1) % colors.length);

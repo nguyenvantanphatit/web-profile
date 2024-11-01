@@ -3,10 +3,6 @@ import { motion } from 'framer-motion';
 import styles from './style.module.scss';
 import { height } from '../anim';
 import Body from './body/body';
-import Footer from './footer/footer';
-import Image from './image/image';
-import ModeToggle from '@/components/mode-toggle';
-
 import { links } from '@/components/sections/header/config';
 
 interface IndexProps {

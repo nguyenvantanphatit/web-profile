@@ -1,24 +1,19 @@
 import React from 'react';
 import { CardContent, CardFooter, Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
-
 import { Project } from '@/types/project';
-
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger
 } from '@/components/ui/tooltip';
-
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 import TextReveal from '@/components/motion/text-reveal';
-
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 interface ProjectCardProps extends Project {

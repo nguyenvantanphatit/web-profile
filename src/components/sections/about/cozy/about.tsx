@@ -1,6 +1,5 @@
 import React from 'react';
 import MotionWrap from '@/components/motion-wrap';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowUpRightIcon } from 'lucide-react';
@@ -8,7 +7,7 @@ import TextReveal from '@/components/motion/text-reveal';
 import Introduce from '../ring/about';
 function About() {
   return (
-    <MotionWrap className="w-full md:py-24" id="about">
+    <MotionWrap className="w-full md:py-24 py-8" id="about">
       <div className="px-4 md:px-6">
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           <div className="space-y-4">

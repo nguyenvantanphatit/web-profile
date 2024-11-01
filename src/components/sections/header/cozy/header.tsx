@@ -37,7 +37,7 @@ const Header = ({ loader }: HeaderProps) => {
             {meta.author.name}
           </span>
         </Link>
-        <div className="md:space-x-4">
+        <div className="space-x-4 mr-4">
           <ModeToggle />
         </div>
         <div onClick={() => setIsActive(!isActive)} className={styles.el}>

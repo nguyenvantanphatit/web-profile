@@ -2,12 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import Link from '@/components/motion/link';
 import { motion } from 'framer-motion';
-import { CodeIcon, EllipsisIcon, MenuIcon, XIcon } from 'lucide-react';
+import { EllipsisIcon, MenuIcon, XIcon } from 'lucide-react';
 import ThemeToggle from '@/components/mode-toggle';
 import { linkLimit, links } from '@/components/sections/header/config';
-
 import { metadata as meta } from '@/app/config';
-
 import {
   DropdownMenu,
   DropdownMenuContent,

@@ -1,16 +1,13 @@
 "use client"
 import { useEffect, useState } from "react";
-
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
-
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 300) {
@@ -19,9 +16,7 @@ export default function ScrollToTop() {
         setIsVisible(false);
       }
     };
-
     window.addEventListener("scroll", toggleVisibility);
-
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
