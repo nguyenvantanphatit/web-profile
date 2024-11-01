@@ -104,12 +104,12 @@ function Skills() {
           <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white dark:from-background"></div>
           <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-white dark:from-background"></div>
         </div>
-        <div className="flex items-center justify-between gap-4">
+      <section className='hidden md:block'>
+      <div className="flex items-center justify-between gap-4">
           <div></div>
           <div className="system w-full">
             <div className="system__orbit system__orbit--sun flex items-center justify-center">
               Front-end
-              {/* <img src="/images/skill/nextjs.svg" alt="Sun" className="system__icon system__icon--sun" /> */}
             </div>
             <div className="system__orbit system__orbit--mercury">
               <div className="system__planet system__planet--mercury">
@@ -147,8 +147,8 @@ function Skills() {
               </div>
             </div>
           </div>
-          <div></div>
         </div>
+      </section>
       </div>
     </MotionWrap>
   );

@@ -17,7 +17,7 @@ export default function Home() {
     <SmoothScroll>
       <div className="flex min-h-[100dvh] flex-col">
         <Header loader={true} />
-        <main className="flex-1 max-w-screen-2xl mx-auto">
+        <main className="flex-1 max-w-sm md:max-w-screen-2xl mx-auto">
           <Hero />
           <About />
           <Skills />
