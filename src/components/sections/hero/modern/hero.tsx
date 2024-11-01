@@ -27,7 +27,7 @@ function Hero() {
       className="relative w-full overflow-hidden bg-background/[0.96]"
       ref={container}
     >
-      <div className="relative z-10 h-[42.5dvh]">
+      <div className="relative z-10 h-[59.5dvh] md:h-[42.5dvh]">
         <div className="relative flex h-full flex-col items-center justify-center">
           <div className="flex flex-col w-full items-center justify-center px-4 md:px-6">
             <img src="/images/banner/profile.png" alt="user-avatar-image"
