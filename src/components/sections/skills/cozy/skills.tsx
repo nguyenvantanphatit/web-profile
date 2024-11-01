@@ -80,7 +80,7 @@ function Skills() {
               {secondRow.map((testimonial, index) => (
                 <CarouselItem
                   key={`testimonial-reverse_${index}`}
-                  className="md:basis-1/6 lg:basis-1/6 xl:basis-1/6 p-2">
+                  className="md:basis-1/6 lg:basis-1/6 xl:basis-1/6 p-1">
                   <div className="h-full p-1">
                     <TestimonialCard
                       name={testimonial.label}
@@ -103,7 +103,7 @@ function Skills() {
               </div>
               <div className="system__orbit system__orbit--mercury">
                 <div className="system__planet system__planet--mercury">
-                  <img src="/images/skill/react.svg" alt="Mercury" />
+                  <img src="/images/skill/logo-next.svg" alt="Mercury" />
                 </div>
               </div>
               <div className="system__orbit system__orbit--venus">

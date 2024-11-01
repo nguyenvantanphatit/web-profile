@@ -250,27 +250,27 @@
 }
 
 .system__orbit.system__orbit--venus {
-  animation-duration: 3.6s;
+  animation-duration: 4.6s;
 }
 
 .system__orbit.system__orbit--earth {
-  animation-duration: 4.1s;
+  animation-duration: 5.6s;
 }
 
 .system__orbit.system__orbit--mars {
-  animation-duration: 7.8s;
+  animation-duration: 6.6s;
 }
 
 .system__orbit.system__orbit--jupiter {
-  animation-duration: 12.8s;
+  animation-duration: 7.6s;
 }
 
 .system__orbit.system__orbit--saturn {
-  animation-duration: 20.3s;
+  animation-duration: 8.6s;
 }
 
 .system__orbit.system__orbit--uranus {
-  animation-duration: 100.4s;
+  animation-duration: 9.6s;
 }
 
 .system__orbit.system__orbit--neptune {
@@ -342,3 +342,12 @@
 .system__orbit:nth-child(9) { width: 90%; height: 90%; }
 .system__orbit:nth-child(10) { width: 100%; height: 100%; } */
 
+.custom-spin-slow {
+  animation: spin-text 10s linear infinite;
+}
+
+@keyframes spin-text {
+  to {
+    transform: rotate(360deg);
+  }
+}
