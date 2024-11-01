@@ -351,3 +351,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+.circle-text {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  fill: #333;
+}

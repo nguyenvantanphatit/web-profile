@@ -9,6 +9,8 @@ import { useRef } from 'react';
 import TextReveal from '@/components/motion/text-reveal';
 import Reveal from '@/components/reveal';
 import ParallaxImage from '@/components/motion/parallax-image';
+import { ArrowUpRightIcon } from 'lucide-react';
+import { ButtonCustom } from '@/components/ui/MovingBorders';
 
 function Hero() {
   const container = useRef<HTMLDivElement>(null);
@@ -29,8 +31,35 @@ function Hero() {
     >
       <div className="relative z-10 h-[59.5dvh] md:h-[52.5dvh]">
         <div className="relative flex h-full flex-col items-center justify-center">
+          <div className="absolute inset-0 overflow-hidden">
+            <ButtonCustom
+              borderRadius="50%"
+              containerClassName="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2"
+              borderClassName="border-primary/10"
+              duration={5000}
+            >
+              <> </>
+            </ButtonCustom>
+
+            <ButtonCustom
+              borderRadius="50%"
+              containerClassName="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2"
+              borderClassName="border-primary/20"
+              duration={10000}
+            >
+              <> </>
+            </ButtonCustom>
+            <ButtonCustom
+              borderRadius="50%"
+              containerClassName="absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2"
+              borderClassName="border-primary/30"
+              duration={15000}
+            >
+              <> </>
+            </ButtonCustom>
+          </div>
           <div className="flex flex-col w-full items-center justify-center px-4 md:px-6 relative">
-           <svg className="circle-svg circle-svg-center custom-spin-slow" viewBox="0 0 500 500" width="500" height="500">
+            <svg className="circle-svg circle-svg-center custom-spin-slow" viewBox="0 0 500 500" width="500" height="500">
               <defs>
                 <path
                   d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"

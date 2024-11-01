@@ -15,7 +15,7 @@ export const runtime = 'edge';
 export async function GET(req: NextRequest): Promise<Response | ImageResponse> {
   try {
     const headersList = headers();
-    const isLight = headersList.get('Sec-CH-Prefers-Color-Scheme') === 'light';
+    const isLight = headersList.get('Sec-CH-Prefers-Color-Scheme') === 'dark';
 
     const inter = await fetch(
       new URL('../../../public/fonts/Inter-SemiBold.ttf', import.meta.url)

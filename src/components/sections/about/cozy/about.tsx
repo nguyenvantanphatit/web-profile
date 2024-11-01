@@ -15,7 +15,7 @@ function About() {
               <TextReveal>About Me</TextReveal>
             </h2>
             <div className="space-y-4">
-              <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-justify">
                 <TextReveal>
                   I'm a Front-End Developer with many years of experience developing web applications using modern technologies such as React.js, Next.js, and Angular. I also have extensive knowledge of Node.js, which helps me build comprehensive and optimized web applications. I have worked on real projects such as landing pages, e-commerce, news, and dashboards.
                 </TextReveal>

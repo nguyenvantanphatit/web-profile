@@ -16,7 +16,7 @@ const config = {
       screens: {
         '2xl': '1400px'
       },
-      
+
     },
     extend: {
       colors: {
@@ -96,11 +96,9 @@ const config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        spotlight: 'spotlight 2s ease .75s 1 forwards',
-        "landing-hero-beam-bottom":
-          "linear-gradient(90deg, rgba(255,255,255,0), #47EBEB, rgba(255,255,255,0))",
-        "landing-hero-beam-bottom-light":
-          "linear-gradient(90deg, rgba(255,255,255,0), #0080FF, rgba(255,255,255,0))",
+        "spotlight": 'spotlight 2s ease .75s 1 forwards',
+        'spin-slow': 'spin 2s linear infinite',
+        "landing-hero-beam-bottom": 'landing-hero-beam-bottom 1s ease-in-out infinite',
       }
     }
   },
