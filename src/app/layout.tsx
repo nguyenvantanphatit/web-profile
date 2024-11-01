@@ -13,6 +13,7 @@ import Loader from '@/app/loader';
 import Providers from '@/app/providers';
 
 import { createMetadata } from '@/lib/metadata';
+import ScrollToTop from '@/components/scrollToTop';
 
 // https://iamsteve.me/blog/the-best-ink-trap-typefaces-for-websites
 const bricolage_grotesque = Bricolage_Grotesque({ subsets: ['latin'] });
@@ -42,6 +43,7 @@ export default function RootLayout({
           {children}
           <Toaster />
         </Providers>
+        <ScrollToTop />
       </body>
     </html>
   );

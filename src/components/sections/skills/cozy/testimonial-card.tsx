@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 import { Testimonial } from '@/types/testimonial';
+import { ButtonCustom } from '@/components/ui/MovingBorders';
 
 interface TestimonialCardProps extends Testimonial {
   className?: string;
@@ -15,22 +16,33 @@ function TestimonialCard({
   className
 }: TestimonialCardProps) {
   return (
-    <Card className={cn('h-full w-full rounded-xl', 'bg-muted/40 hover:bg-muted', className)}>
-      <div className="flex items-center p-4 gap-3">
-        <div className="h-12 w-12 xl:h-16 xl:w-16 overflow-hidden rounded-md border border-border p-1">
-          <Image
-            src={image || '/placeholder.svg'}
-            alt={name || 'Anonymous'}
-            className="aspect-square object-scale-down rounded-lg"
-            height={80}
-            width={80}
-          />
+    <ButtonCustom
+      duration={Math.floor(Math.random() * 10000) + 10000}
+      borderRadius="1.75rem"
+      style={{
+        backgroundColor:
+          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        borderRadius: `calc(1.75rem* 0.96)`,
+      }}
+      className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+    >
+      <Card className={cn('h-full w-full rounded-xl', 'bg-muted/40 hover:bg-muted', className)}>
+        <div className="flex items-center p-4 gap-3">
+          <div className="h-12 w-12 xl:h-16 xl:w-16 overflow-hidden rounded-md border border-border p-1">
+            <Image
+              src={image || '/placeholder.svg'}
+              alt={name || 'Anonymous'}
+              className="aspect-square object-scale-down rounded-lg"
+              height={80}
+              width={80}
+            />
+          </div>
+          <div>
+            <p className="font-semibold xl:text-lg">{name || 'Anonymous'}</p>
+          </div>
         </div>
-        <div>
-          <p className="font-semibold xl:text-lg">{name || 'Anonymous'}</p>
-        </div>
-      </div>
-    </Card>
+      </Card>
+    </ButtonCustom>
   );
 }
 

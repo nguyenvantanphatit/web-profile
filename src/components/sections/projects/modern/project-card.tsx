@@ -1,10 +1,10 @@
 import React from 'react';
 import { CardContent, CardFooter, Card } from '@/components/ui/card';
-import { Button, buttonVariants } from '@/components/ui/button';
+import { Button } from '@/components/ui/button';
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { GithubIcon, GlobeIcon, InfoIcon } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 import { Project } from '@/types/project';
 
@@ -66,17 +66,17 @@ function ProjectCard({
           </div>
         </div>
       </CardContent>
-      <CardFooter className="flex items-center justify-end p-4 md:p-6">
+      <CardFooter className="flex items-center justify-end p-2 md:p-2">
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
               <Button
                 variant="ghost"
-                className="z-[2] rounded-md border border-zinc-950/10 dark:border-zinc-50/10"
+                className="z-[2] rounded-full w-16 h-16 border border-zinc-950/10 dark:border-zinc-50/10"
                 asChild
               >
                 <Link href={href}>
-                  <InfoIcon />
+                  <ArrowUpRight />
                 </Link>
               </Button>
             </TooltipTrigger>
