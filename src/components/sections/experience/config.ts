@@ -1,10 +1,16 @@
 import { Experience } from '@/types/experience';
-
-const experiences: Experience[] = [
+import { Lightbulb, Target, Users } from 'lucide-react';
+const experiences:  Experience[] = [
   {
-    name: 'Front-end development',
-    duration: '02/2024 - Present',
-    company: 'Echo Medi',
+    company: "Echo Medi",
+    logo: "/placeholder.svg?height=40&width=40",
+    period: "02/2024 - Present",
+    role: "FRONT-END DEVELOPMENT",
+    color: "border-red-400",
+    accent: "stroke-red-400",
+    bg: "bg-red-50",
+    iconColor: "text-red-500",
+    icon: Users,
     description: [
       'Developed a responsive and efficient user interface for Echo Medi’s main website using Next.js and Tailwind CSS to provide an optimized experience for online appointment scheduling, test result viewing, and product purchasing.',
       'Integrated secure and user-friendly payment systems with VNPay and Momo, facilitating smooth and reliable online transactions.',
@@ -15,9 +21,15 @@ const experiences: Experience[] = [
     technologies: ['Next.js', 'Tailwind CSS', 'React.js', 'Shadcn', 'Momo', 'FPT SMS']
   },
   {
-    name: 'Software Engineer',
-    duration: '11/2023 - 01/2024',
-    company: 'TMTECH Vietnam',
+    company: "TMTECH Vietnam",
+    logo: "/placeholder.svg?height=40&width=40",
+    period: "11/2023 - 01/2024",
+    role: "SOFTWARE ENGINEER",
+    color: "border-yellow-400",
+    accent: "stroke-yellow-400",
+    bg: "bg-yellow-50",
+    iconColor: "text-yellow-500",
+    icon: Lightbulb,
     description: [
       'Utilized ReactJS and Ant Design (Antd) to develop a user-friendly interface for managing client information, staff, products, quotations, purchase orders, production, and payments.',
       'Implemented a Node.js backend to handle API requests and used MySQL for efficient data storage and management.',
@@ -27,9 +39,15 @@ const experiences: Experience[] = [
     technologies: ['React.js', 'Ant Design (Antd)', 'Node.js', 'MySQL', 'socket.io']
   },
   {
-    name: 'Front-end development',
-    duration: '04/2023 - 04/2023',
-    company: 'Viet Japan Digital',
+    company: "Viet Japan Digital",
+    logo: "/placeholder.svg?height=40&width=40",
+    period: "04/2023 - 04/2023",
+    role: "INTERN",
+    color: "border-teal-400",
+    accent: "stroke-teal-400",
+    bg: "bg-teal-50",
+    iconColor: "text-teal-500",
+    icon: Target,
     description: [
       'Used ZaloPay to process gift code promotions for customers, achieving seamless and efficient handling of promotional offers.',
       'Utilized Angular to fix layout issues, implement hide and show features for transaction history, and manage lottery functionalities and forms, improving user experience and functionality.',
@@ -37,7 +55,7 @@ const experiences: Experience[] = [
       'Utilized ReactJS for the frontend, Node.js for the backend, MySQL for the database, and Ant Design for UI components.'
     ],
     technologies: ['ZaloPay', 'Angular', 'React.js', 'Node.js', 'MySQL', 'Ant Design']
-  },
-];
+  }
+]
 
 export { experiences };

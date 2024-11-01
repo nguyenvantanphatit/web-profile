@@ -15,7 +15,7 @@ const config = {
       padding: '2rem',
       screens: {
         '2xl': '1400px'
-      }
+      },
     },
     extend: {
       colors: {
@@ -67,6 +67,20 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' }
         },
+        "landing-hero-beam-bottom": {
+          "0%": {
+            opacity: '1',
+            transform: "scaleX(1)",
+          },
+          "50%": {
+            opacity: "0.5",
+            transform: "scaleX(0.5)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scaleX(1)",
+          },
+        },
         spotlight: {
           '0%': {
             opacity: '0',
@@ -81,7 +95,11 @@ const config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        spotlight: 'spotlight 2s ease .75s 1 forwards'
+        spotlight: 'spotlight 2s ease .75s 1 forwards',
+        "landing-hero-beam-bottom":
+          "linear-gradient(90deg, rgba(255,255,255,0), #47EBEB, rgba(255,255,255,0))",
+        "landing-hero-beam-bottom-light":
+          "linear-gradient(90deg, rgba(255,255,255,0), #0080FF, rgba(255,255,255,0))",
       }
     }
   },

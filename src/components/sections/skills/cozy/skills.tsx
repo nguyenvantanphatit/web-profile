@@ -107,8 +107,9 @@ function Skills() {
         <div className="flex items-center justify-between gap-4">
           <div></div>
           <div className="system w-full">
-            <div className="system__orbit system__orbit--sun">
-              <img src="/images/skill/nextjs.svg" alt="Sun" className="system__icon system__icon--sun" />
+            <div className="system__orbit system__orbit--sun flex items-center justify-center">
+              Front-end
+              {/* <img src="/images/skill/nextjs.svg" alt="Sun" className="system__icon system__icon--sun" /> */}
             </div>
             <div className="system__orbit system__orbit--mercury">
               <div className="system__planet system__planet--mercury">
@@ -117,22 +118,32 @@ function Skills() {
             </div>
             <div className="system__orbit system__orbit--venus">
               <div className="system__planet system__planet--venus">
-                <img src="/images/skill/typescript.svg" alt="Venus" />
+                <img src="/images/skill/react.svg" alt="Venus" />
               </div>
             </div>
             <div className="system__orbit system__orbit--earth">
               <div className="system__planet system__planet--earth">
-                <img src="/images/skill/javascript.svg" alt="Earth" />
+                <img src="/images/skill/typescript.svg" alt="Earth" />
               </div>
             </div>
             <div className="system__orbit system__orbit--mars">
               <div className="system__planet system__planet--mars">
-                <img src="/images/skill/angular.svg" alt="Mars" />
+                <img src="/images/skill/javascript.svg" alt="Mars" />
               </div>
             </div>
             <div className="system__orbit system__orbit--jupiter">
               <div className="system__planet system__planet--jupiter">
+                <img src="/images/skill/angular.svg" alt="Jupiter" />
+              </div>
+            </div>
+            <div className="system__orbit system__orbit--saturn">
+              <div className="system__planet system__planet--jupiter">
                 <img src="/images/skill/tailwind-css.svg" alt="Jupiter" />
+              </div>
+            </div>
+            <div className="system__orbit system__orbit--uranus">
+              <div className="system__planet system__planet--jupiter">
+                <img src="/images/skill/shadcn.png" alt="Jupiter" />
               </div>
             </div>
           </div>

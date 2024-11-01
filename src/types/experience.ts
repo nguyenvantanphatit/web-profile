@@ -1,9 +1,15 @@
 import React from 'react';
 
 export interface Experience {
-  name: string;
   company: string;
-  duration: string;
-  description?: string[]; 
-  technologies?: string[];
+  logo: string;
+  period: string;
+  role: string;
+  color: string;
+  accent: string;
+  bg: string;
+  iconColor: string;
+  icon: React.ElementType;
+  description: string[];
+  technologies: string[];
 }
