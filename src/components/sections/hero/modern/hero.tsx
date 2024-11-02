@@ -11,6 +11,8 @@ import Reveal from '@/components/reveal';
 import ParallaxImage from '@/components/motion/parallax-image';
 import { ArrowUpRightIcon } from 'lucide-react';
 import { ButtonCustom } from '@/components/ui/MovingBorders';
+import PhysicsContainer from './Skill';
+import { dataBrand } from '../../skills/config';
 
 function Hero() {
   const container = useRef<HTMLDivElement>(null);
@@ -24,12 +26,14 @@ function Hero() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  const [showPhysics, setShowPhysics] = useState(true);
   return (
     <section
       className="relative w-full overflow-hidden bg-background/[0.96]"
       ref={container}
     >
       <div className="relative z-10 h-[59.5dvh] md:h-[52.5dvh]">
+      <PhysicsContainer showPhysics={showPhysics} skills={dataBrand} />
         <div className="relative flex h-full flex-col items-center justify-center">
           <div className="absolute inset-0 overflow-hidden">
             <ButtonCustom
